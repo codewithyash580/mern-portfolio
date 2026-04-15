@@ -8,10 +8,17 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.get('/health',(req,res) =>{
+    res.status(200).send('ok')
+})
 
 app.use(cors());
 app.use(express.json());
 
 app.use("/api/contact", contactRoutes);
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+const PORT = process.env.PORT || 5000 ;
+
+app.listen(PORT,() =>{
+    console.log('server is running on port ${PORT}')
+})
