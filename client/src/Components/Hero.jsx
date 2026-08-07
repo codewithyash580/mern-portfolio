@@ -1,10 +1,12 @@
-
 const Hero = () => {
   return (
-    <section className="bg-black text-white min-h-screen flex items-center">
+    <section
+      id="home"
+      className="bg-black text-white min-h-screen flex items-center"
+    >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-        {/* Left Content */}
+        
         <div>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Hi, I'm <span className="text-blue-500">Yash Chauhan</span>
@@ -21,28 +23,35 @@ const Hero = () => {
 
           {/* Buttons */}
           <div className="mt-6 flex gap-4">
-            <button className="bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-600 transition"
-             onClick = {()=>{
-              document.getElementById("Skills").scrollIntoView({behaviour:"smooth"})
-             }}>
+            <button
+              className="bg-blue-500 px-6 py-2 rounded-lg hover:bg-blue-600 transition"
+              onClick={() => {
+                document.getElementById("skills")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
               View Skills
             </button>
 
-            <button className="border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black transition"
-              onClick={()=>{
-
-              document.getElementById("Contact").scrollIntoView({ behaviour:"Smooth"})
-              
-}}
-    >          Contact Me
+            <button
+              className="border border-white px-6 py-2 rounded-lg hover:bg-white hover:text-black transition"
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Contact Me
             </button>
           </div>
         </div>
 
-        {/* Right Image */}
-        <div>
       
-      </div>
+        <div>
+        
+        </div>
+
       </div>
     </section>
   );

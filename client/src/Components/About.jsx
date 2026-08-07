@@ -3,7 +3,7 @@ const About = () => {
     <section className="bg-gray-100 py-12">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-        {/* Left Image */}
+        
         <div>
           <img
             src="https://via.placeholder.com/400"
@@ -12,7 +12,7 @@ const About = () => {
           />
         </div>
 
-        {/* Right Content */}
+        
         <div>
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
 
@@ -28,7 +28,7 @@ const About = () => {
             skills by building real-world projects.
           </p>
 
-          {/* Skills Highlights */}
+          
           <div className="grid grid-cols-2 gap-4 mt-6">
             <div className="bg-white p-4 rounded-lg shadow">
               <h3 className="font-semibold">Frontend</h3>
